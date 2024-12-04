@@ -1,0 +1,20 @@
+{
+  "name": "vitallink_localserver",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "Vitallink",
+  "license": "ISC",
+  "description": "Local server for forwarding MQTT messages to Backend Database",
+  "dependencies": {
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.3",
+    "mqtt": "^5.10.1",
+    "socket.io": "^4.8.1"
+  }
+}
