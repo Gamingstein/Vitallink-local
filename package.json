@@ -2,19 +2,30 @@
   "name": "vitallink_localserver",
   "version": "1.0.0",
   "main": "src/index.js",
+  "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js"
+    "start": "node build/index.js",
+    "dev": "tsc-watch --onSuccess \"npm start\"",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "Vitallink",
   "license": "ISC",
   "description": "Local server for forwarding MQTT messages to Backend Database",
   "dependencies": {
+    "axios": "^1.7.9",
     "express": "^4.21.1",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.8.3",
     "mqtt": "^5.10.1",
     "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.7",
+    "@types/node": "^22.10.6",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.7.3"
   }
 }
